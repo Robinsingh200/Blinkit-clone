@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+.product-image img {
+  width: 300px;
+  height: auto;
+}
+.product-info {
+  max-width: 600px;
+}
+.product-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.price {
+  color: #222;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.add-btn {
+  background-color: #00a500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.benefits {
+  margin-top: 30px;
+}
+.benefits img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.benefits h4 {
+  margin: 10px 0 5px;
+}
+.product-details {
+  padding: 40px;
+  background: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+.product-details h2 {
+  margin-bottom: 20px;
+}
+.product-details p {
+  margin: 10px 0;
+}
+.card-section {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1100px;
+}
