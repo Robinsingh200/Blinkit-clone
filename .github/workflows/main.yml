@@ -1,0 +1,31 @@
+name: chaching and artifacts
+
+on:
+   push:
+     branches: [ main ]
+
+jobs:
+  build-computer:
+    runs-on: ubuntu-latest 
+
+    steps:
+     - uses: actions/checkout@v3
+
+     - name: Setup Node.js
+       uses: actions/setup-node@v4
+       with:
+         node-version: 18
+         cache: 'npm'
+       
+     - name: npm install
+       run: npm test 
+     
+     - name: atifacts use 
+       uses: actions/upload-artifact@v4
+       with:
+          name: builds files
+          path: out/
+            # dist
+            # builds
+
+     
